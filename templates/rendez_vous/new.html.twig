@@ -1,0 +1,21 @@
+{% extends 'rendez_vous/index.html.twig' %}
+
+{% block title %}New RendezVous{% endblock %}
+
+{% block body %}
+<div class="background">
+    <br><br><br><br>
+    <div class="center">
+<div class="contact">
+    <div class="card" style="width:720px">
+<h1>Create new RendezVous</h1>
+
+    {{ include('rendez_vous/_form.html.twig') }}</div></div>
+        <div class="margin" style="margin-left: 300px" >
+            <a type="button" class="btn btn-dark mt-1"href="{{ path('app_rendez_vous_index') }}">back to list</a></div>
+        <br><br><br><br>
+</div>
+</div>
+
+    </div>
+{% endblock %}

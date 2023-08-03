@@ -1,0 +1,38 @@
+.contact{
+    text-align: center;
+    margin-top: 60px;
+
+}
+table, th, td {
+    border: 1px solid;
+}
+tbody,tr,th{
+    border: 2px solid;
+
+}
+.table {
+    width: 68%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+.background{
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+    url("https://thumbs.dreamstime.com/b/full-stadium-neoned-colorful-flashlights-background-full-stadium-neoned-colorful-flashlights-background-flyer-197148262.jpg");
+}
+.card {
+    box-shadow: 0 4px 8px ;
+
+
+}
+.center{
+    margin-left: 500px;
+    margin-right: 300px;
+    width: 6em
+
+}
+.margin{
+    margin-left: 150px;
+}
+

@@ -1,0 +1,22 @@
+{{ form_start(form) }}
+<div class="form-outline mb-4">
+
+    {{ form_row(form.objet , {
+        label: 'Objet :'
+    }) }}
+</div>
+    <div class="form-outline mb-4">
+
+    {{ form_row(form.message , {
+        label: 'Message :'
+    }) }}
+    </div>
+        <div class="form-outline mb-4">
+
+        {{ form_row(form.user , {
+        label: 'User :'
+    }) }}
+        </div>
+    <button class="btn btn-success">{{ button_label|default('SEND') }}</button>
+<button  type="reset" value="Reset" class="btn-close" aria-label="Close"></button>
+{{ form_end(form) }}

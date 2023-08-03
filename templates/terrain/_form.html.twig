@@ -1,0 +1,50 @@
+{{ form_start(form) }}
+
+
+    <div class="container" >
+        <div  class="contact" >
+
+
+<div class="form-outline mb-4">
+
+    {{ form_row(form.type , {
+        label: 'Type :'
+    }) }}
+</div>
+<div class="form-outline mb-4">
+
+    {{ form_row(form.dimension , {
+        label: 'Dimension :'
+    }) }}
+</div>
+<div class="form-outline mb-4">
+
+    {{ form_row(form.adress , {
+        label: 'Adress :'
+    }) }}
+</div>
+<div class="form-outline mb-4">
+
+    {{ form_row(form.capacite , {
+        label: 'Capacite :'
+    }) }}
+</div>
+<div class="form-outline mb-4">
+
+    {{ form_row(form.prix , {
+        label: 'Prix :'
+    }) }}
+</div>
+<div class="form-outline mb-4">
+
+    {{ form_row(form.duree , {
+        label: 'Durée :'
+    }) }}
+</div>
+<button class="btn btn btn-success ">{{ button_label|default('Save') }}</button>
+<button  type="reset" value="Reset" class="btn-close" aria-label="Close"></button>
+
+</div>
+    </div>
+
+{{ form_end(form) }}

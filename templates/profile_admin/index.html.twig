@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+ {% block stylesheets %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" href="{{ asset('css/Admin.css') }}">
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ {% endblock %}
+
+{% block title %} Profile{% endblock %}
+
+    {% block body %}
+
+        {% block header %}
+
+
+            <div class="w3-top mt-0,5" style="text-align: justify;"  >
+
+                <div class="w3-bar w3-white w3-card" id="myNavbar"  style=" background-color: #f1efef!important">
+                    <div style="margin: 19px;">
+                    <a href="/user" class="w3-bar-item w3-button w3-wide">SPORTIVE LIST</a>
+                    <a href="/rendez/vous" class="w3-bar-item w3-button w3-wide">MEET TIME LIST</a>
+                    <a href="/terrain" class="w3-bar-item w3-button w3-wide">TERRAIN LIST </a>
+                    <a href="/contact" class="w3-bar-item w3-button w3-wide">CONTACT</a>
+
+
+                    </div>
+
+
+
+
+                    <div class="w3-right w3-hide-small" style="margin:auto">
+                        <a href="{{ path('app_logout') }}" class="w3-bar-item w3-button"><i class="fa fa-sign-out" aria-hidden="true"></i>  LOGOUT</a>
+
+                    </div>
+
+                    <div class="w3-right w3-hide-small" style="margin:auto">
+                        <a  class="w3-bar-item "><i  aria-hidden="true"></i> {{ app.user.Nom }} & {{ app.user.Prenom }}</a>
+
+                    </div>
+
+                </div>
+            </div>
+
+        {% endblock %}
+        <div class="bgimg-1 w3-display-container w3-grayscale-min" >
+            <div class="w3-display-left w3-text-white" >
+
+            </div>
+        </div>
+
+    {% endblock %}
+
+

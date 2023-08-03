@@ -1,0 +1,27 @@
+{% extends 'terrain/index.html.twig' %}
+
+{% block title %}Edit Terrain{% endblock %}
+
+{% block body %}
+    <div class="background">
+        <br><br>
+        <div class="center">
+<div class="contact">
+
+<div class="card" style="width: 500px">
+<h1>Edit Terrain</h1>
+
+    {{ include('terrain/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <br>
+</div> </div>
+ <div class="margin" >
+    <div class="btn-group mt-3" role="group" aria-label="Basic example">
+    <a class="btn btn-dark " href="{{ path('app_terrain_index') }}">back to list</a>
+
+    {{ include('terrain/_delete_form.html.twig') }}
+    </div>
+ </div>
+</div>
+    </div>
+{% endblock %}

@@ -1,0 +1,33 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://img.freepik.com/free-vector/happy-tiny-people-near-huge-welcome-word-flat-illustration_74855-10808.jpg?w=2000");
+    min-height: 100%;
+}
+
+
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+    width: 30%;
+}
+.aa{
+    background-image: url(https://www.crozetgazette.com/wp-content/uploads/2021/04/iStock-1181403907-scaled.jpg);
+    background-size: cover;
+    align-items: center!important;
+    height: 100%!important;
+    display: flex!important;
+
+}
+
+
+.w3-right {
+    margin: 100px;
+}

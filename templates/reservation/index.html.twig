@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+ {% block stylesheets %}
+     <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
+
+ {% endblock %}
+
+{% block title %}New RendezVous{% endblock %}
+
+{% block body %}
+    <div class="cont">
+
+        <div class="res">
+            <div class="contact">
+                <div class="card" style="width: 800px ">
+                    <h1>Reservation Terrain</h1>
+
+                    {{ include('rendez_vous/_form.html.twig') }}</div>
+
+
+        </div>
+    </div>
+
+    </div>
+{% endblock %}
+

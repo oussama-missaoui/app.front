@@ -1,0 +1,11 @@
+vich_uploader:
+    db_driver: orm
+
+    metadata:
+        type: attribute
+
+    mappings:
+        Terrains:
+            uri_prefix: /images/Terrains
+            upload_destination: '%kernel.project_dir%/public/images/Terrains'
+            namer: Vich\UploaderBundle\Naming\UniqidNamer

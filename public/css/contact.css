@@ -1,0 +1,41 @@
+.cont{
+    background-image: url(https://img.freepik.com/vecteurs-libre/fond-terrain-football-degrade_23-2149017952.jpg?w=2000);
+    background-size: cover;
+    align-items: center!important;
+    height: 100%!important;
+    display: flex!important;
+
+}
+.contact{
+    text-align: center;
+    margin-top: 60px;
+
+}
+.center{
+    margin-left: 500px;
+    margin-right: 300px;
+    width: 6em
+
+}
+.card{
+    width: 500px;
+    height: 370px;
+}
+.table {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+table, th, td {
+    border: 2px solid;
+}
+tbody,tr,th{
+    border: 2px solid;
+
+}
+.res{
+    margin-right:40px;
+    margin-left: 400px;
+}

@@ -1,0 +1,54 @@
+{% extends 'user/index.html.twig' %}
+
+{% block title %}User{% endblock %}
+
+{% block body %}
+
+<div class="background">
+    <br><br>
+
+<div  class="contact">
+    <div class="container">
+        <div class="card" >
+    <h1>Name: {{ user.nom }}</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th class="table-info">Id</th>
+                <td>{{ user.id }}</td>
+            </tr>
+            <tr>
+                <th class="table-info">Email</th>
+                <td>{{ user.email }}</td>
+            </tr>
+            <tr>
+                <th class="table-info">Roles</th>
+                <td>{{ user.roles ? user.roles|json_encode : '' }}</td>
+            </tr>
+            <tr>
+                <th class="table-info">First Name</th>
+                <td>{{ user.nom }}</td>
+            </tr>
+            <tr>
+                <th class="table-info">Last Name</th>
+                <td>{{ user.prenom }}</td>
+            </tr>
+            <tr>
+                <th class="table-info">Sexe</th>
+                <td>{{ user.sexe }}</td>
+            </tr>
+            <tr>
+                <th class="table-info">Phone Number</th>
+                <td>{{ user.numTel }}</td>
+            </tr>
+        </tbody>
+    </table>
+        </div>
+    <a class="btn btn-dark mt-3" href="{{ path('app_user_index') }}">back to list</a>
+
+<br><br><br><br><br>
+    </div>
+</div>
+</div>
+{% endblock %}

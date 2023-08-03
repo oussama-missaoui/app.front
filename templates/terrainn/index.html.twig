@@ -1,0 +1,58 @@
+{% extends 'ajouter_contact/index.html.twig' %}
+ {% block stylesheets %}
+     <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+ {% endblock %}
+
+{% block title %}Terrain List {% endblock %}
+
+{% block body %}
+
+<br><br>
+
+                    <h1 class="center mt-3">Terrain List</h1>
+
+
+                    <table class="table">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th>Id</th>
+                            <th>Type</th>
+                            <th>Dimension</th>
+                            <th>Adress</th>
+                            <th>Capacité</th>
+                            <th>Prix</th>
+                            <th>Dureé</th>
+                            <th>Image</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for terrain in terrains %}
+                            <tr>
+                                <td>{{ terrain.id }}</td>
+                                <td>{{ terrain.type }}</td>
+                                <td>{{ terrain.dimension }}</td>
+                                <td>{{ terrain.adress }}</td>
+                                <td>{{ terrain.capacite }}</td>
+                                <td>{{ terrain.prix }}</td>
+                                <td>{{ terrain.duree }}</td>
+
+                                <td class="text-center"><img width="500" height="300" src="{{ asset('images/Terrains/') }}{{ terrain.imageName }}" class="rounded" alt="terrain"></td>
+
+
+
+
+
+                            </tr>
+                        {% else %}
+                            <tr>
+                                <td colspan="8">no records found</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+
+
+{% endblock %}
